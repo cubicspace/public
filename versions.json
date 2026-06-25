@@ -1,0 +1,23 @@
+{
+  "latest": "v1.0.00",
+  "generated": "2026-06-25T13:15:40Z",
+  "files": {
+    "fr_html": "Politique_Confidentialite_FR.html",
+    "fr_md": "Politique_Confidentialite_FR.md",
+    "en_html": "Privacy_Policy_EN.html",
+    "en_md": "Privacy_Policy_EN.md"
+  },
+  "versions": [
+    {
+      "version": "v1.0.00",
+      "date": "2026-06-25T12:56:09Z",
+      "base": "v1.0.00/",
+      "files": {
+        "fr_html": "v1.0.00/Politique_Confidentialite_FR.html",
+        "fr_md": "v1.0.00/Politique_Confidentialite_FR.md",
+        "en_html": "v1.0.00/Privacy_Policy_EN.html",
+        "en_md": "v1.0.00/Privacy_Policy_EN.md"
+      }
+    }
+  ]
+}
