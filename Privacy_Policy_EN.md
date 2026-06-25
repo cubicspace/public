@@ -224,19 +224,25 @@ If you are not satisfied with our response, or if you wish to file a complaint d
 
 ### 11\. Refusal of collection
 
-You may refuse to provide certain information. The following list specifies, by category, the available options and the consequences of a refusal:
+You may refuse to provide certain information or withdraw your consent for certain data collection activities. The following outlines your options and their consequences.
+
+**Collection you can choose to refuse:**
 
 > • Analytics cookies (Google Analytics): refuse via the cookie preference center on our website. Consequence: no usage statistics will be collected; all site features remain available.
 > 
-> • Marketing cookies / advertising profiling (Meta Pixel): refuse via the cookie preference center. Consequence: no personalized advertising via Meta; all site features remain available.
-> 
-> • Application diagnostic data (Sentry, PostHog): contact our representative at privacy@cubicspace.ai. Consequence: remote diagnosis of certain bugs may be limited; the application remains functional.
-> 
-> 
-> • In-app support (Intercom): contact our representative at privacy@cubicspace.ai. Consequence: real-time in-app support will not be available; you may still reach us by email.
-> • Camera access (CubicScreen application): revoke the permission in your device settings. Consequence: calibration and local eye-tracking features will be disabled; other application features remain available.
+> • Marketing cookies (Meta Pixel): refuse via the cookie preference center. Consequence: no personalized advertising via Meta; all site features remain available.
 > 
 > • Identification information (email address): do not create an account or do not fill out contact forms. Consequence: it will not be possible to receive support or communications; the application remains accessible based on your license type.
+
+**Collection required for service delivery:**
+
+Certain information is collected because it is essential to the operation, security, or stability of the service. These activities cannot be individually disabled. If you do not wish this data to be collected, you may discontinue use of the relevant service.
+
+> • Diagnostic data (Sentry, PostHog): these tools collect technical data (errors, performance, environment) necessary for the stability and ongoing improvement of the application.
+> 
+> • In-app support (Intercom): the in-app support module collects the information necessary to process your support requests.
+> 
+> • Camera access (CubicScreen): camera access is required for the calibration and eye-tracking features that constitute the application's core functionality. Without this access, the application cannot fulfill its purpose.
 
 ### 12\. Retention and destruction
 
