@@ -8,9 +8,9 @@ Rédigée conformément au Guide de la Commission d’accès à l’information 
 
 Date d’entrée en vigueur : 23 juin 2026
 
-Dernière mise à jour : 23 juin 2026
+Dernière mise à jour : 19 octobre 2026
 
-Version 1.0
+Version 1.1
 
 ## PARTIE I – POLITIQUE GÉNÉRALE
 
@@ -260,7 +260,7 @@ La présente politique peut être modifiée à tout moment. Toute modification e
 
 L’entreprise maintient des politiques internes relatives à la gestion des incidents de confidentialité et à la gouvernance des renseignements personnels.
 
-La présente version de ces politiques est la version 1.0.0, en vigueur depuis le 23 juin 2026.
+La présente version de ces politiques est la version 1.1, en vigueur depuis le 19 octobre 2026.
 
 ## PARTIE II – AVIS DE CONFIDENTIALITÉ – APPLICATION CUBICSCREEN
 
@@ -370,15 +370,35 @@ Vérification de la légitimité de l’utilisateur;
 
 ### 5\. Accès aux fonctionnalités de l’appareil
 
-#### Caméra
+#### Caméra et API TrueDepth (données faciales)
 
-Utilisée uniquement pour la calibration et le suivi local des yeux aux fins de l’affichage 3D.
+L'application CubicScreen utilise la caméra TrueDepth d'Apple pour déterminer la position des yeux de l'utilisateur en temps réel, dans le seul but de calibrer et de restituer un affichage 3D sans lunettes. Seules les coordonnées de position des yeux sont extraites du capteur TrueDepth; aucune géométrie faciale, aucun maillage facial ni aucune autre caractéristique du visage n'est collecté ou analysé. L'utilisation de la caméra TrueDepth constitue un accès aux **données faciales** (Face Data) au sens de la définition d'Apple.
 
-> • Le traitement s’effectue exclusivement sur votre appareil (traitement local). Aucune image n’est transmise à nos serveurs ou à des tiers.
+**Utilisation des données faciales :**
+
+> • L'application lit uniquement les données de position des yeux fournies par le capteur TrueDepth afin d'ajuster le rendu de la perspective 3D en temps réel. Il s'agit de la fonctionnalité principale de l'application. Aucune autre information faciale n'est utilisée.
+
+**Traitement sur l'appareil et aucun transfert de données :**
+
+> • L'ensemble du traitement des données faciales s'effectue exclusivement sur votre appareil (traitement local). Aucune donnée faciale n'est transmise à nos serveurs, à des tiers, ni hors de votre appareil.
 > 
-> • Aucun gabarit biométrique n’est créé, enregistré ou conservé. Les données de suivi des yeux ne persistent pas au-delà de la session active.
+> • Aucun gabarit biométrique, profil facial ou modèle d'identité de l'utilisateur n'est créé, enregistré ou conservé. Les données faciales ne persistent pas au-delà de la session active et sont supprimées lorsque l'application est fermée ou que la session de suivi se termine.
+
+**Usages interdits — les données faciales ne sont PAS utilisées pour :**
+
+> • L'authentification, la publicité, le marketing ou le ciblage des utilisateurs de quelque manière que ce soit;
 > 
-> • Vous pouvez révoquer l’accès à la caméra à tout moment dans les paramètres de votre appareil. Cela désactivera les fonctions de calibration et de suivi, sans affecter les autres fonctionnalités de l’application.
+> • La construction de profils d'utilisateurs, ou toute tentative d'identifier des utilisateurs anonymes ou de reconstituer des profils;
+> 
+> • Tout usage sans rapport avec la fonctionnalité de suivi oculaire et de calibration de l'affichage 3D décrite ci-dessus.
+
+**Aucun partage des données faciales :**
+
+> • Les données faciales ne sont ni transférées, ni partagées, ni vendues, ni autrement fournies à des plateformes publicitaires, des fournisseurs d'analytique, des courtiers en données, des revendeurs d'information ou tout autre tiers.
+
+**Révocation de l'accès :**
+
+> • Vous pouvez révoquer l'accès à la caméra et à TrueDepth à tout moment dans les paramètres de votre appareil. Sans cet accès, l'application cessera de fonctionner, car le suivi de la position des yeux est indispensable au rendu 3D qui constitue sa fonctionnalité principale.
 
 #### Réseau
 
@@ -571,4 +591,5 @@ Pour toute question concernant vos droits en matière de vie privée en vertu de
 | **Version** | **Date**     | **Auteur**      | **Description**  |
 | ----------- | ------------ | --------------- | ---------------- |
 | 1.0         | 23 Juin 2025 | Francis Labonté | Version initiale |
+| 1.1         | 19 Oct 2026  | Francis Labonté | Ajout de la divulgation API TrueDepth / données faciales (Face Data) (Apple guideline 5.1.1(i), DPLA §3.3.3(K)) |
 

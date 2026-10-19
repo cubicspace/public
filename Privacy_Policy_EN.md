@@ -8,9 +8,9 @@ Drafted in accordance with the Guide of the Commission d'accès à l'information
 
 Effective date: June 23, 2026
 
-Last updated: June 23, 2026
+Last updated: October 19, 2026
 
-Version 1.0
+Version 1.1
 
 ## PART I – GENERAL POLICY
 
@@ -370,15 +370,35 @@ Verification of the legitimacy of the user;
 
 ### 5\. Access to device features
 
-#### Camera
+#### Camera and TrueDepth API (Face Data)
 
-Used only for calibration and local eye tracking for the purposes of 3D display.
+The CubicScreen application uses Apple's TrueDepth camera to determine the position of the user's eyes in real time, for the sole purpose of calibrating and rendering a glasses-free 3D display. Only eye position coordinates are extracted from the TrueDepth sensor; no facial geometry, face mesh, or other facial features are collected or analyzed. Because the TrueDepth camera is used, this constitutes access to **Face Data** as defined by Apple.
 
-> • Processing is performed exclusively on your device (local processing). No images are transmitted to our servers or to third parties.
+**How Face Data is used:**
+
+> • The application reads only the eye position data provided by the TrueDepth sensor to adjust the 3D perspective rendering in real time. This is the core functionality of the application. No other facial information is used.
+
+**On-device processing and no data transfer:**
+
+> • All Face Data processing is performed exclusively on your device (local processing). No Face Data is transmitted to our servers, to third parties, or off your device.
 > 
-> • No biometric template is created, recorded, or retained. Eye-tracking data does not persist beyond the active session.
+> • No biometric template, facial profile, or user identity model is created, recorded, or retained. Face Data does not persist beyond the active session and is discarded when the application is closed or the tracking session ends.
+
+**Prohibited uses — Face Data is NOT used for:**
+
+> • Authentication, advertising, marketing, or targeting users in any manner;
 > 
-> • You may revoke camera access at any time in your device settings. This will disable calibration and tracking features, without affecting the other features of the application.
+> • Building user profiles, or attempting to identify anonymous users or reconstruct user profiles;
+> 
+> • Any purpose unrelated to the eye-tracking and 3D display calibration functionality described above.
+
+**No sharing of Face Data:**
+
+> • Face Data is not transferred, shared, sold, or otherwise provided to advertising platforms, analytics providers, data brokers, information resellers, or any other third parties.
+
+**Revoking access:**
+
+> • You may revoke camera and TrueDepth access at any time in your device settings. Without this access, the application will cease to function, as eye-position tracking is required for the 3D rendering that constitutes its core functionality.
 
 #### Network
 
@@ -571,3 +591,4 @@ For any questions about your privacy rights under U.S. state laws, you may conta
 | **Version** | **Date**     | **Auteur**      | **Description**  |
 | ----------- | ------------ | --------------- | ---------------- |
 | 1.0         | 23 Juin 2026 | Francis Labonté | Initiale version |
+| 1.1         | 19 Oct 2026  | Francis Labonté | Added TrueDepth API / Face Data disclosure (Apple guideline 5.1.1(i), DPLA §3.3.3(K)) |

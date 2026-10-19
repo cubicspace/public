@@ -322,7 +322,7 @@ footer {
 <p>La présente politique peut être modifiée à tout moment. Toute modification est publiée sur le site Web.</p>
 <h3>15. Documents internes</h3>
 <p>L’entreprise maintient des politiques internes relatives à la gestion des incidents de confidentialité et à la gouvernance des renseignements personnels.</p>
-<p>La présente version de ces politiques est la version 1.0.0, en vigueur depuis le 23 juin 2026.</p>
+<p>La présente version de ces politiques est la version 1.1, en vigueur depuis le 19 octobre 2026.</p>
 <h2>PARTIE II – AVIS DE CONFIDENTIALITÉ – APPLICATION CUBICSCREEN</h2>
 <h3>Description de l’application</h3>
 <p>CubicScreen est une application mobile permettant l’affichage de contenus 3D.</p>
@@ -454,12 +454,30 @@ footer {
 </li>
 </ul>
 <h3>5. Accès aux fonctionnalités de l’appareil</h3>
-<h4>Caméra</h4>
-<p>Utilisée uniquement pour la calibration et le suivi local des yeux aux fins de l’affichage 3D.</p>
+<h4>Caméra et API TrueDepth (données faciales)</h4>
+<p>L'application CubicScreen utilise la caméra TrueDepth d'Apple pour déterminer la position des yeux de l'utilisateur en temps réel, dans le seul but de calibrer et de restituer un affichage 3D sans lunettes. Seules les coordonnées de position des yeux sont extraites du capteur TrueDepth; aucune géométrie faciale, aucun maillage facial ni aucune autre caractéristique du visage n'est collecté ou analysé. L'utilisation de la caméra TrueDepth constitue un accès aux <strong>données faciales</strong> (Face Data) au sens de la définition d'Apple.</p>
+<p><strong>Utilisation des données faciales :</strong></p>
 <blockquote>
-<p>• Le traitement s’effectue exclusivement sur votre appareil (traitement local). Aucune image n’est transmise à nos serveurs ou à des tiers.</p>
-<p>• Aucun gabarit biométrique n’est créé, enregistré ou conservé. Les données de suivi des yeux ne persistent pas au-delà de la session active.</p>
-<p>• Vous pouvez révoquer l’accès à la caméra à tout moment dans les paramètres de votre appareil. Cela désactivera les fonctions de calibration et de suivi, sans affecter les autres fonctionnalités de l’application.</p>
+<p>• L'application lit uniquement les données de position des yeux fournies par le capteur TrueDepth afin d'ajuster le rendu de la perspective 3D en temps réel. Il s'agit de la fonctionnalité principale de l'application. Aucune autre information faciale n'est utilisée.</p>
+</blockquote>
+<p><strong>Traitement sur l'appareil et aucun transfert de données :</strong></p>
+<blockquote>
+<p>• L'ensemble du traitement des données faciales s'effectue exclusivement sur votre appareil (traitement local). Aucune donnée faciale n'est transmise à nos serveurs, à des tiers, ni hors de votre appareil.</p>
+<p>• Aucun gabarit biométrique, profil facial ou modèle d'identité de l'utilisateur n'est créé, enregistré ou conservé. Les données faciales ne persistent pas au-delà de la session active et sont supprimées lorsque l'application est fermée ou que la session de suivi se termine.</p>
+</blockquote>
+<p><strong>Usages interdits — les données faciales ne sont PAS utilisées pour :</strong></p>
+<blockquote>
+<p>• L'authentification, la publicité, le marketing ou le ciblage des utilisateurs de quelque manière que ce soit;</p>
+<p>• La construction de profils d'utilisateurs, ou toute tentative d'identifier des utilisateurs anonymes ou de reconstituer des profils;</p>
+<p>• Tout usage sans rapport avec la fonctionnalité de suivi oculaire et de calibration de l'affichage 3D décrite ci-dessus.</p>
+</blockquote>
+<p><strong>Aucun partage des données faciales :</strong></p>
+<blockquote>
+<p>• Les données faciales ne sont ni transférées, ni partagées, ni vendues, ni autrement fournies à des plateformes publicitaires, des fournisseurs d'analytique, des courtiers en données, des revendeurs d'information ou tout autre tiers.</p>
+</blockquote>
+<p><strong>Révocation de l'accès :</strong></p>
+<blockquote>
+<p>• Vous pouvez révoquer l'accès à la caméra et à TrueDepth à tout moment dans les paramètres de votre appareil. Sans cet accès, l'application cessera de fonctionner, car le suivi de la position des yeux est indispensable au rendu 3D qui constitue sa fonctionnalité principale.</p>
 </blockquote>
 <h4>Réseau</h4>
 <p>- Activation et transmission de données anonymisées</p>
@@ -619,6 +637,12 @@ footer {
 <td>23 Juin 2025</td>
 <td>Francis Labonté</td>
 <td>Version initiale</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>19 Oct 2026</td>
+<td>Francis Labonté</td>
+<td>Ajout de la divulgation API TrueDepth / données faciales (Face Data) (Apple guideline 5.1.1(i), DPLA §3.3.3(K))</td>
 </tr>
 </tbody>
 </table>

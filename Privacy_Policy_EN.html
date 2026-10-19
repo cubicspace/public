@@ -454,12 +454,30 @@ footer {
 </li>
 </ul>
 <h3>5. Access to device features</h3>
-<h4>Camera</h4>
-<p>Used only for calibration and local eye tracking for the purposes of 3D display.</p>
+<h4>Camera and TrueDepth API (Face Data)</h4>
+<p>The CubicScreen application uses Apple's TrueDepth camera to determine the position of the user's eyes in real time, for the sole purpose of calibrating and rendering a glasses-free 3D display. Only eye position coordinates are extracted from the TrueDepth sensor; no facial geometry, face mesh, or other facial features are collected or analyzed. Because the TrueDepth camera is used, this constitutes access to <strong>Face Data</strong> as defined by Apple.</p>
+<p><strong>How Face Data is used:</strong></p>
 <blockquote>
-<p>• Processing is performed exclusively on your device (local processing). No images are transmitted to our servers or to third parties.</p>
-<p>• No biometric template is created, recorded, or retained. Eye-tracking data does not persist beyond the active session.</p>
-<p>• You may revoke camera access at any time in your device settings. This will disable calibration and tracking features, without affecting the other features of the application.</p>
+<p>• The application reads only the eye position data provided by the TrueDepth sensor to adjust the 3D perspective rendering in real time. This is the core functionality of the application. No other facial information is used.</p>
+</blockquote>
+<p><strong>On-device processing and no data transfer:</strong></p>
+<blockquote>
+<p>• All Face Data processing is performed exclusively on your device (local processing). No Face Data is transmitted to our servers, to third parties, or off your device.</p>
+<p>• No biometric template, facial profile, or user identity model is created, recorded, or retained. Face Data does not persist beyond the active session and is discarded when the application is closed or the tracking session ends.</p>
+</blockquote>
+<p><strong>Prohibited uses — Face Data is NOT used for:</strong></p>
+<blockquote>
+<p>• Authentication, advertising, marketing, or targeting users in any manner;</p>
+<p>• Building user profiles, or attempting to identify anonymous users or reconstruct user profiles;</p>
+<p>• Any purpose unrelated to the eye-tracking and 3D display calibration functionality described above.</p>
+</blockquote>
+<p><strong>No sharing of Face Data:</strong></p>
+<blockquote>
+<p>• Face Data is not transferred, shared, sold, or otherwise provided to advertising platforms, analytics providers, data brokers, information resellers, or any other third parties.</p>
+</blockquote>
+<p><strong>Revoking access:</strong></p>
+<blockquote>
+<p>• You may revoke camera and TrueDepth access at any time in your device settings. Without this access, the application will cease to function, as eye-position tracking is required for the 3D rendering that constitutes its core functionality.</p>
 </blockquote>
 <h4>Network</h4>
 <p>- Activation and transmission of anonymized data</p>
@@ -619,6 +637,12 @@ footer {
 <td>23 Juin 2026</td>
 <td>Francis Labonté</td>
 <td>Initiale version</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>19 Oct 2026</td>
+<td>Francis Labonté</td>
+<td>Added TrueDepth API / Face Data disclosure (Apple guideline 5.1.1(i), DPLA §3.3.3(K))</td>
 </tr>
 </tbody>
 </table>
