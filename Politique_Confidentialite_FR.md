@@ -590,6 +590,6 @@ Pour toute question concernant vos droits en matière de vie privée en vertu de
 
 | **Version** | **Date**     | **Auteur**      | **Description**  |
 | ----------- | ------------ | --------------- | ---------------- |
-| 1.0         | 23 Juin 2025 | Francis Labonté | Version initiale |
+| 1.0         | 23 Juin 2026 | Francis Labonté | Version initiale |
 | 1.1         | 19 Oct 2026  | Francis Labonté | Ajout de la divulgation API TrueDepth / données faciales (Face Data) (Apple guideline 5.1.1(i), DPLA §3.3.3(K)) |
 

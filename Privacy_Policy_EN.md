@@ -260,7 +260,7 @@ This policy may be amended at any time. Any changes will be published on the web
 
 The company maintains internal policies related to the management of privacy incidents and the governance of personal information.
 
-The current version of these policies is version 1.0.0, in effect since June 23, 2026.
+The current version of these policies is version 1.1, in effect since October 19, 2026.
 
 ## PART II – PRIVACY NOTICE – CUBICSCREEN APPLICATION
 
